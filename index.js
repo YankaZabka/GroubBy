@@ -17,7 +17,7 @@ const groupBy = (arr, key) => {
             outputObject[keyName].push(obj)
         }
     })
-    console.log(arr)
+
     return outputObject
 }
 
@@ -28,8 +28,3 @@ const defaultArray = [
     { id: 4, universe: "dc", name: "Bat Man" },
     { id: 5, universe: "marvel", name: "Hulk" }
 ]
-
-// console.log(defaultArray.filter(obj => 'universe' in obj))
-// console.log(!![])
-
-console.log(groupBy(defaultArray, "universe"));
