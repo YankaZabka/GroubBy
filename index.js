@@ -5,20 +5,20 @@ const groupBy = (arr, key) => {
         return {}
     }
 
-    const outputArr = {}
+    const outputObject = {}
 
     arr.forEach(obj => {
         const keyName = obj[key]
 
-        if (keyName in outputArr) {
-            outputArr[keyName].push(obj)
+        if (keyName in outputObject) {
+            outputObject[keyName].push(obj)
         } else {
-            outputArr[keyName] = []
-            outputArr[keyName].push(obj)
+            outputObject[keyName] = []
+            outputObject[keyName].push(obj)
         }
     })
-
-    return outputArr
+    console.log(arr)
+    return outputObject
 }
 
 const defaultArray = [
